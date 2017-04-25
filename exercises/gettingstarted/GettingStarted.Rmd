@@ -95,7 +95,7 @@ MAKE THE WORD *ITALIC* ITALICIZED
 
 MAKE THE FOLLOWING R CODE CREATE A PLOT IN THIS DOCUMENT
 
-```{r echo=FALSE} 
+```{r echo=FALSE,error=TRUE} 
 plot(density(rnorm(1000)))
 ```
 
