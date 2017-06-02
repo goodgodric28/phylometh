@@ -1,17 +1,19 @@
 # Some basic tests to make sure things are running.
 
-GetHowManyTrees <- function(ntaxa=10) {
+GetHowManyTrees <- function(ntaxa) {
 	#ape can compute this for us.
-	result <- ___SOME FUNCTION WITH AN ARGUMENT_____
+	library(ape)
+	result <- howmanytrees(ntaxa)
 	return(result)
-]
+}
 
 
 GetAlignment <- function() {
 	#Let's see where mafft is installed
 	library(ape)
+  library(ips)
+  data(woodmouse)
 	print(system("which mafft"))
-	data(woodmouse)
-	result <- ips::mafft(____SOME INPUT ARGUMENT____)
+	result <- ips::mafft(woodmouse)
 	return(result)
 }
